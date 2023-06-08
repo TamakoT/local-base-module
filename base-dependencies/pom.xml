@@ -17,6 +17,11 @@
 
         <spring-cloud.version>2022.0.3</spring-cloud.version>
         <spring-boot.version>2.7.12</spring-boot.version>
+        <fastjson2.version>2.0.26</fastjson2.version>
+        <hutool.version>5.8.18</hutool.version>
+        <guava.version>31.1-jre</guava.version>
+        <common-lang3.version>3.12.0</common-lang3.version>
+        <common-lang.version>2.6</common-lang.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +40,37 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${common-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${common-lang.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
