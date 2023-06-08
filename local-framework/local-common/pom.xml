@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.tamako</groupId>
         <artifactId>local-framework</artifactId>
-        <version>1.0.0-RELEASE</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>local-common</artifactId>
