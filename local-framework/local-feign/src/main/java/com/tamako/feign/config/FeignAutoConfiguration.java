@@ -1,5 +1,8 @@
 package com.tamako.feign.config;
 
+import com.tamako.feign.client.TestFeignClient;
+import com.tamako.feign.client.impl.TestFeignClientImpl;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,4 +18,10 @@ import org.springframework.context.annotation.Configuration;
         "com.tamako.feign.client"
 })
 public class FeignAutoConfiguration {
+
+    @Bean("testFeignClient")
+    public TestFeignClient testFeignClient() {
+        return new TestFeignClientImpl();
+    }
+
 }
