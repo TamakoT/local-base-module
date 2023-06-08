@@ -1,6 +1,8 @@
 package com.tamako.feign.client.impl;
 
 import com.tamako.feign.client.TestFeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestFeignClientImpl implements TestFeignClient {
 
     @Override
-    public Integer add(Integer a, Integer b) {
+    @GetMapping(value = "/feign/test/add")
+    public Integer add(@RequestParam("a") Integer a, @RequestParam("b") Integer b) {
         return a + b;
     }
 

@@ -1,9 +1,7 @@
 package com.tamako.feign.client;
 
+import feign.Param;
 import feign.RequestLine;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 测试feign接口
@@ -20,8 +18,7 @@ public interface TestFeignClient {
      * @param b b
      * @return 和
      */
-    @RequestMapping(value = "/feign/test/add", method = RequestMethod.GET)
     @RequestLine("GET /feign/test/add")
-    Integer add(@RequestParam("a") Integer a, @RequestParam("b") Integer b);
+    Integer add(@Param("a") Integer a, @Param("b") Integer b);
 
 }
