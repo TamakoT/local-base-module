@@ -1,6 +1,7 @@
 package com.tamako.feign.client;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -18,7 +19,7 @@ public interface TestFeignClient {
      * @param b b
      * @return 和
      */
-    @GetMapping("/feign/test/add")
+    @RequestMapping(value = "/feign/test/add", method = RequestMethod.GET)
     Integer add(@RequestParam("a") Integer a, @RequestParam("b") Integer b);
 
 }
