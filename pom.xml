@@ -20,7 +20,7 @@
     <properties>
         <revision>1.0.0-DEV</revision>
 
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
