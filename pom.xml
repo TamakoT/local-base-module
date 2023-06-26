@@ -18,19 +18,22 @@
     <description>本地项目脚手架</description>
 
     <properties>
-        <revision>1.0.0-RELEASE</revision>
+        <revision>1.0.0-DEV</revision>
 
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <lombok.version>1.18.24</lombok.version>
-        <spring.boot.version>2.7.8</spring.boot.version>
-        <mapstruct.version>1.5.3.Final</mapstruct.version>
-        <maven_flatten_version>1.2.5</maven_flatten_version>
+        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven_flatten_version>1.5.0</maven_flatten_version>
+
+        <!-- 需要与dependencies版本号保持一致 -->
+        <spring.boot.version>3.1.1</spring.boot.version>
+        <lombok.version>1.18.28</lombok.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+
     </properties>
 
     <dependencyManagement>

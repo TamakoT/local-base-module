@@ -13,10 +13,13 @@
     <description>基础 pom 文件，管理整个项目的依赖版本</description>
 
     <properties>
-        <revision>1.0.0-RELEASE</revision>
+        <revision>1.0.0-DEV</revision>
 
-        <spring-cloud.version>2021.0.7</spring-cloud.version>
-        <spring-boot.version>2.7.12</spring-boot.version>
+        <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <spring-boot.version>3.1.1</spring-boot.version>
+
+        <lombok.version>1.18.28</lombok.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
 
         <fastjson2.version>2.0.26</fastjson2.version>
         <hutool.version>5.8.18</hutool.version>
@@ -79,6 +82,17 @@
                 <version>${okhttp.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
